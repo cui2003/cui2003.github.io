@@ -4,6 +4,8 @@
         <title>欢迎来到我的主页</title>
         <!--标题头像 --> 
 		<link rel="icon" href="\img\touxiang003.ico" >
+	  <embed src="\wfzj.flac" hidden="true" autostart="true" loop="true">
+
     </head>
 <body background="\img\001.jpg"  class="bjimg" >
     <span class="mobile btn-mobile-menu">
@@ -145,30 +147,4 @@ document.write("您是第" + visits + "位访问本专题的！")
   <!-- TODO背景 -->
 #  <script src="https://gcore.jsdelivr.net/gh/wallleap/cdn/js/piao.js"></script>
 #<audio src="\wfzj.flac" autoplay="true" playcount="-1"></audio>
-<!-- 为博客底部添加音乐组件 -->
-<div id="player"  class="aplayer"></div>
-<link href="https://files.cnblogs.com/files/shwee/APlayer.min_v1.10.1.css" rel="stylesheet">
-<script src="https://files.cnblogs.com/files/shwee/APlayer.min_v1.10.1.js"></script> 
 
-<script type="\wfzj.flac">
-const ap = new APlayer({
-    container: document.getElementById('player'),
-    fixed: true,
-    autoplay: true, //自动播放
-    audio: [{
-        name: 'The Song Of Doremi',
-        artist: '林澜叶',
-        url: '.mp3',
-        cover: '.ico',
-    },
-	{
- 		name: '阳光甚好，微风不噪',
-        artist: '何石',
-        url: '.mp3',
-        cover: '.ico',
-	}
-
-	]
-});
-ap.init();
-</script>
